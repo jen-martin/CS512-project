@@ -30,8 +30,8 @@ def main():
         for row in scotus_data:
             #temporary list for dates
             line = [str(i)]
-            #get name of case
-            line.append(row.get('name', []))
+            #get name of case and add quote marks
+            line.append('"' + row.get('name', []) + '"')
             #first, get the timeline data as a list
             timeline = row.get('timeline', [])
             #print(timeline) #debug
@@ -66,7 +66,7 @@ def write_csv(data_list, outfile):
 
 def csv_to_json(infile, outfile):
     """This function converts a CSV-formatted file into a JSON-formatted file."""
-    print("Converting CSV file to JSON")
+    print("Converting CSV file (" + infile + ") to JSON (" + outfile + ")")
     # to do
 
 
@@ -82,7 +82,7 @@ def write_json(data_list, outfile):
 
 def json_to_csv(infile, outfile):
     """This function converts a JSON-formatted file into a CSV-formatted file."""
-    print("Converting JSON file to CSV")
+    print("Converting JSON file (" + infile + ") to CSV (" + outfile + ")")
     #TO DO
 
 if __name__ == '__main__':
