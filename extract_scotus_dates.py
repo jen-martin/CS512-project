@@ -46,8 +46,9 @@ for i in range(start_year, end_year+1):
     #print(scotus_dates) #debug
 
 
-function write_csv():
+def write_csv():
     # ===== WRITE DATA TO CSV =======
+    print("Saving file to CSV")
     with open ("scotus_dates.csv", "w") as outfile:
         #write header row
         outfile.write("Year, Title, Date Granted, Date Argued, Date Decided\n")
@@ -56,7 +57,8 @@ function write_csv():
             line = ", ".join(row)
             outfile.write(line + "\n")
 
-function write_json():
+def write_json():
+    print("Saving file to JSON")
     # ===== WRITE DATA TO JSON =======
     # # Save data to a JSON file
     # outfile = "scotus_data_" + str(i) + ".json" 
