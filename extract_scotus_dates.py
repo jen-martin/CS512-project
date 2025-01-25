@@ -31,16 +31,17 @@ def main():
         for row in scotus_data:
             #temporary list for dates
             line = [str(i)]
-            #get name of case and add quote marks
-            line.append('"' + row.get('name', []) + '"')
+            #get name of case
+            #line.append(f'"{row.get("name",[])}"')
+            line.append(row.get("name",[]))
             #first, get the timeline data as a list
-            timeline = row.get('timeline', [])
+            timeline = row.get("timeline", [])
             #print(timeline) #debug
             #now get each "event" (Granted, Argued, Decided)
             for item in timeline:
                 if item is None:
                     # do something
-                    line.append(" ")
+                    line.append('" "')
                 else:
                     #convert epoch time to YYYY-MM-DD, solution provided by "FloLie" at https://stackoverflow.com/questions/65063058/convert-unix-timestamp-to-date-string-with-format-yyyy-mm-dd
                     dt = datetime.fromtimestamp(item["dates"][0])
@@ -54,7 +55,8 @@ def main():
     csv_to_json("scotus_dates.csv", "scotus_dates_converted.json")
 
     #Convert JSON file to CSV file
-    json_to_csv("scotus_dates_converted.json", "scotus_dates_converted.csv")
+    json_to_csv("test.json", "scotus_dates_converted.csv")
+    #json_to_csv("scotus_dates_converted.json", "scotus_dates_converted.csv")
 
 def write_csv(data_list, outfile):
     """This function takes a list of lists and writes a CSV file."""
@@ -64,13 +66,15 @@ def write_csv(data_list, outfile):
         outfile.write("Year, Title, Date_Granted, Date_Argued, Date_Decided\n")
         #iterate through each row of the data, join with a comma, and write to file
         for row in data_list:
+            #add quote marks to title
+            row[1] = f'"{row[1]}"'
             line = ", ".join(row)
             outfile.write(line + "\n")
 
 def csv_to_json(infile, outfile):
     """This function converts a CSV-formatted file into a JSON-formatted file."""
-    print("Converting CSV file (" + infile + ") to JSON (" + outfile + ")")
-    # to do
+    #TO DO
+    print("Converted CSV file (" + infile + ") to JSON (" + outfile + ")")
 
 
 def write_json(data_list, outfile):
@@ -85,8 +89,13 @@ def write_json(data_list, outfile):
 
 def json_to_csv(infile, outfile):
     """This function converts a JSON-formatted file into a CSV-formatted file."""
-    print("Converting JSON file (" + infile + ") to CSV (" + outfile + ")")
-    #TO DO
+    #Converting the json file to csv using pandas
+    df = pd.read_json(infile)
+    #convert values to strings
+    df = df.astype(str)
+    date_list = df.values.tolist()
+    write_csv(date_list, outfile)
+    print("Converted JSON file (" + infile + ") to CSV (" + outfile + ")")
 
 if __name__ == '__main__':
     main()

@@ -2,155 +2,876 @@
  {
    "Year": 2019,
    "Title": "New York State Rifle & Pistol Association Inc. v. City of New York",
-   "Date Granted": 1548136800,
-   "Date Argued": 1575266400,
-   "Date Decided": 1587963600
+   "Date_Granted": "2019-01-21",
+   "Date_Argued": "2019-12-01",
+   "Date_Decided": "2020-04-26"
  },
  {
    "Year": 2019,
    "Title": "County of Maui, Hawaii v. Hawaii Wildlife Fund",
-   "Date Granted": 1550556000,
-   "Date Argued": 1573020000,
-   "Date Decided": 1587618000
+   "Date_Granted": "2019-02-18",
+   "Date_Argued": "2019-11-05",
+   "Date_Decided": "2020-04-22"
  },
  {
    "Year": 2019,
    "Title": "Rotkiske v. Klemm",
-   "Date Granted": 1551074400,
-   "Date Argued": 1571202000,
-   "Date Decided": 1575957600
+   "Date_Granted": "2019-02-24",
+   "Date_Argued": "2019-10-15",
+   "Date_Decided": "2019-12-09"
  },
  {
    "Year": 2019,
    "Title": "Peter v. NantKwest, Inc.",
-   "Date Granted": 1551679200,
-   "Date Argued": 1570424400,
-   "Date Decided": 1576130400
+   "Date_Granted": "2019-03-03",
+   "Date_Argued": "2019-10-06",
+   "Date_Decided": "2019-12-11"
  },
  {
    "Year": 2019,
    "Title": "Kansas v. Garcia",
-   "Date Granted": 1552885200,
-   "Date Argued": 1571202000,
-   "Date Decided": 1583301600
+   "Date_Granted": "2019-03-17",
+   "Date_Argued": "2019-10-15",
+   "Date_Decided": "2020-03-03"
  },
  {
    "Year": 2019,
    "Title": "Mathena v. Malvo",
-   "Date Granted": 1552885200,
-   "Date Argued": 1571202000,
-   "Date Decided": 1582696800
+   "Date_Granted": "2019-03-17",
+   "Date_Argued": "2019-10-15",
+   "Date_Decided": "2020-02-25"
  },
  {
    "Year": 2019,
    "Title": "Ramos v. Louisiana",
-   "Date Granted": 1552885200,
-   "Date Argued": 1570424400,
-   "Date Decided": 1587358800
+   "Date_Granted": "2019-03-17",
+   "Date_Argued": "2019-10-06",
+   "Date_Decided": "2020-04-19"
  },
  {
    "Year": 2019,
    "Title": "Kahler v. Kansas",
-   "Date Granted": 1552885200,
-   "Date Argued": 1570424400,
-   "Date Decided": 1584939600
+   "Date_Granted": "2019-03-17",
+   "Date_Argued": "2019-10-06",
+   "Date_Decided": "2020-03-22"
  },
  {
    "Year": 2019,
    "Title": "Kansas v. Glover",
-   "Date Granted": 1554094800,
-   "Date Argued": 1572847200,
-   "Date Decided": 1586149200
+   "Date_Granted": "2019-03-31",
+   "Date_Argued": "2019-11-03",
+   "Date_Decided": "2020-04-05"
  },
  {
    "Year": 2019,
    "Title": "Altitude Express v. Zarda",
-   "Date Granted": 1555909200,
-   "Date Argued": 1570510800,
-   "Date Decided": 1592197200
+   "Date_Granted": "2019-04-21",
+   "Date_Argued": "2019-10-07",
+   "Date_Decided": "2020-06-14"
  },
  {
    "Year": 2019,
    "Title": "Bostock v. Clayton County",
-   "Date Granted": 1555909200,
-   "Date Argued": 1570510800,
-   "Date Decided": 1592197200
+   "Date_Granted": "2019-04-21",
+   "Date_Argued": "2019-10-07",
+   "Date_Decided": "2020-06-14"
  },
  {
    "Year": 2019,
    "Title": "Barton v. Barr",
-   "Date Granted": 1555909200,
-   "Date Argued": 1572847200,
-   "Date Decided": 1587618000
+   "Date_Granted": "2019-04-21",
+   "Date_Argued": "2019-11-03",
+   "Date_Decided": "2020-04-22"
  },
  {
    "Year": 2019,
    "Title": "CITGO Asphalt Refining Co. v. Frescati Shipping Co.",
-   "Date Granted": 1555909200,
-   "Date Argued": 1572933600,
-   "Date Decided": 1585544400
+   "Date_Granted": "2019-04-21",
+   "Date_Argued": "2019-11-04",
+   "Date_Decided": "2020-03-29"
  },
  {
    "Year": 2019,
    "Title": "R.G. & G.R. Harris Funeral Homes Inc. v. Equal Employment Opportunity Commission",
-   "Date Granted": 1555909200,
-   "Date Argued": 1570510800,
-   "Date Decided": 1592197200
+   "Date_Granted": "2019-04-21",
+   "Date_Argued": "2019-10-07",
+   "Date_Decided": "2020-06-14"
  },
  {
    "Year": 2019,
    "Title": "Allen v. Cooper",
-   "Date Granted": 1559538000,
-   "Date Argued": 1572933600,
-   "Date Decided": 1584939600
+   "Date_Granted": "2019-06-02",
+   "Date_Argued": "2019-11-04",
+   "Date_Decided": "2020-03-22"
  },
  {
    "Year": 2019,
    "Title": "Holguin-Hernandez v. United States",
-   "Date Granted": 1559538000,
-   "Date Argued": 1575957600,
-   "Date Decided": 1582696800
+   "Date_Granted": "2019-06-02",
+   "Date_Argued": "2019-12-09",
+   "Date_Decided": "2020-02-25"
  },
  {
    "Year": 2019,
    "Title": "Retirement Plans Committee of IBM v. Jander",
-   "Date Granted": 1559538000,
-   "Date Argued": 1573020000,
-   "Date Decided": 1578981600
+   "Date_Granted": "2019-06-02",
+   "Date_Argued": "2019-11-05",
+   "Date_Decided": "2020-01-13"
  },
  {
    "Year": 2019,
    "Title": "Atlantic Richfield Co. v. Christian, et al.",
-   "Date Granted": 1560142800,
-   "Date Argued": 1575352800,
-   "Date Decided": 1587358800
+   "Date_Granted": "2019-06-09",
+   "Date_Argued": "2019-12-02",
+   "Date_Decided": "2020-04-19"
  },
  {
    "Year": 2019,
    "Title": "McKinney v. Arizona",
-   "Date Granted": 1560142800,
-   "Date Argued": 1576044000,
-   "Date Decided": 1582610400
+   "Date_Granted": "2019-06-09",
+   "Date_Argued": "2019-12-10",
+   "Date_Decided": "2020-02-24"
  },
  {
    "Year": 2019,
    "Title": "Intel Corp. Investment Policy Committee v. Sulyma",
-   "Date Granted": 1560142800,
-   "Date Argued": 1575439200,
-   "Date Decided": 1582696800
+   "Date_Granted": "2019-06-09",
+   "Date_Argued": "2019-12-03",
+   "Date_Decided": "2020-02-25"
  },
  {
    "Year": 2019,
    "Title": "Monasky v. Taglieri",
-   "Date Granted": 1560142800,
-   "Date Argued": 1576044000,
-   "Date Decided": 1582610400
+   "Date_Granted": "2019-06-09",
+   "Date_Argued": "2019-12-10",
+   "Date_Decided": "2020-02-24"
  },
  {
    "Year": 2019,
    "Title": "Comcast Corp. v. National Association of African American-Owned Media",
-   "Date Granted": 1560142800,
-   "Date Argued": 1573624800,
-   "Date Decided": 1584939600
+   "Date_Granted": "2019-06-09",
+   "Date_Argued": "2019-11-12",
+   "Date_Decided": "2020-03-22"
+ },
+ {
+   "Year": 2019,
+   "Title": "Ritzen Group, Inc. v. Jackson Masonry, LLC",
+   "Date_Granted": "2019-05-19",
+   "Date_Argued": "2019-11-12",
+   "Date_Decided": "2020-01-13"
+ },
+ {
+   "Year": 2019,
+   "Title": "Guerrero-Lasprilla v. Barr",
+   "Date_Granted": "2019-06-23",
+   "Date_Argued": "2019-12-08",
+   "Date_Decided": "2020-03-22"
+ },
+ {
+   "Year": 2019,
+   "Title": "Thryv, Inc. v. Click-To-Call Technologies, LP",
+   "Date_Granted": "2019-06-23",
+   "Date_Argued": "2019-12-08",
+   "Date_Decided": "2020-04-19"
+ },
+ {
+   "Year": 2019,
+   "Title": "Maine Community Health Options v. United States",
+   "Date_Granted": "2019-06-23",
+   "Date_Argued": "2019-12-09",
+   "Date_Decided": "2020-04-26"
+ },
+ {
+   "Year": 2019,
+   "Title": "Georgia v. Public.Resource.Org Inc.",
+   "Date_Granted": "2019-06-23",
+   "Date_Argued": "2019-12-01",
+   "Date_Decided": "2020-04-26"
+ },
+ {
+   "Year": 2019,
+   "Title": "Banister v. Davis",
+   "Date_Granted": "2019-06-23",
+   "Date_Argued": "2019-12-03",
+   "Date_Decided": "2020-05-31"
+ },
+ {
+   "Year": 2019,
+   "Title": "Financial Oversight and Management Board for Puerto Rico v. Aurelius Investment, LLC",
+   "Date_Granted": "2019-06-19",
+   "Date_Argued": "2019-10-14",
+   "Date_Decided": "2020-05-31"
+ },
+ {
+   "Year": 2019,
+   "Title": "Opati v. Republic of Sudan",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-02-23",
+   "Date_Decided": " "
+ },
+ {
+   "Year": 2019,
+   "Title": "Thole v. U.S. Bank, N.A.",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-12",
+   "Date_Decided": "2020-05-31"
+ },
+ {
+   "Year": 2019,
+   "Title": "Babb v. Wilkie",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-14",
+   "Date_Decided": "2020-04-05"
+ },
+ {
+   "Year": 2019,
+   "Title": "GE Energy Power Conversion France SAS v. Outokumpu Stainless USA LLC",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-20",
+   "Date_Decided": "2020-05-31"
+ },
+ {
+   "Year": 2019,
+   "Title": "Kelly v. United States",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-13",
+   "Date_Decided": "2020-05-06"
+ },
+ {
+   "Year": 2019,
+   "Title": "Lucky Brand Dungarees Inc. v. Marcel Fashions Group Inc.",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-12",
+   "Date_Decided": "2020-05-13"
+ },
+ {
+   "Year": 2019,
+   "Title": "Espinoza v. Montana Department of Revenue",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-21",
+   "Date_Decided": "2020-06-29"
+ },
+ {
+   "Year": 2019,
+   "Title": "Romag Fasteners, Inc. v. Fossil, Inc.",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-13",
+   "Date_Decided": "2020-04-22"
+ },
+ {
+   "Year": 2019,
+   "Title": "Rodriguez v. Federal Deposit Insurance Corp.",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2019-12-02",
+   "Date_Decided": "2020-02-24"
+ },
+ {
+   "Year": 2019,
+   "Title": "Shular v. United States",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2020-01-20",
+   "Date_Decided": "2020-02-25"
+ },
+ {
+   "Year": 2019,
+   "Title": "Hernandez v. Mesa",
+   "Date_Granted": "2019-05-27",
+   "Date_Argued": "2019-11-11",
+   "Date_Decided": "2020-02-24"
+ },
+ {
+   "Year": 2019,
+   "Title": "Department of Homeland Security v. Regents of the University of California",
+   "Date_Granted": "2019-06-27",
+   "Date_Argued": "2019-11-11",
+   "Date_Decided": "2020-06-17"
+ },
+ {
+   "Year": 2019,
+   "Title": "June Medical Services LLC v. Russo",
+   "Date_Granted": "2019-10-03",
+   "Date_Argued": "2020-03-03",
+   "Date_Decided": "2020-06-28"
+ },
+ {
+   "Year": 2019,
+   "Title": "United States Forest Service v. Cowpasture River Preservation Association",
+   "Date_Granted": "2019-10-03",
+   "Date_Argued": "2020-02-23",
+   "Date_Decided": "2020-06-14"
+ },
+ {
+   "Year": 2019,
+   "Title": "United States v. Sineneng-Smith",
+   "Date_Granted": "2019-10-03",
+   "Date_Argued": "2020-02-24",
+   "Date_Decided": "2020-05-06"
+ },
+ {
+   "Year": 2019,
+   "Title": "Nasrallah v. Barr",
+   "Date_Granted": "2019-10-17",
+   "Date_Argued": "2020-03-01",
+   "Date_Decided": "2020-05-31"
+ },
+ {
+   "Year": 2019,
+   "Title": "Lomax v. Ortiz-Marquez",
+   "Date_Granted": "2019-10-17",
+   "Date_Argued": "2020-02-25",
+   "Date_Decided": "2020-06-07"
+ },
+ {
+   "Year": 2019,
+   "Title": "Seila Law LLC v. Consumer Financial Protection Bureau",
+   "Date_Granted": "2019-10-17",
+   "Date_Argued": "2020-03-02",
+   "Date_Decided": "2020-06-28"
+ },
+ {
+   "Year": 2019,
+   "Title": "Department of Homeland Security v. Thuraissigiam",
+   "Date_Granted": "2019-10-18",
+   "Date_Argued": "2020-03-01",
+   "Date_Decided": "2020-06-24"
+ },
+ {
+   "Year": 2019,
+   "Title": "Liu v. Securities and Exchange Commission",
+   "Date_Granted": "2019-10-31",
+   "Date_Argued": "2020-03-02",
+   "Date_Decided": "2020-06-21"
+ },
+ {
+   "Year": 2019,
+   "Title": "U.S. Patent and Trademark Office v. Booking.com B.V.",
+   "Date_Granted": "2019-11-07",
+   "Date_Argued": "2020-05-03",
+   "Date_Decided": "2020-06-29"
+ },
+ {
+   "Year": 2019,
+   "Title": "Walker v. United States",
+   "Date_Granted": "2019-11-14",
+   "Date_Argued": "2020-01-26",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2019,
+   "Title": "Thompson v. Hebdon",
+   "Date_Granted": "2019-11-24",
+   "Date_Argued": "2019-11-24",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2019,
+   "Title": "McGirt v. Oklahoma",
+   "Date_Granted": "2019-12-12",
+   "Date_Argued": "2020-05-10",
+   "Date_Decided": "2020-07-08"
+ },
+ {
+   "Year": 2019,
+   "Title": "Trump v. Mazars USA, LLP",
+   "Date_Granted": "2019-12-12",
+   "Date_Argued": "2020-05-11",
+   "Date_Decided": "2020-07-08"
+ },
+ {
+   "Year": 2019,
+   "Title": "Trump v. Vance",
+   "Date_Granted": "2019-12-12",
+   "Date_Argued": "2020-05-11",
+   "Date_Decided": "2020-07-08"
+ },
+ {
+   "Year": 2019,
+   "Title": "United States Agency for International Development v. Alliance for Open Society International, Inc.",
+   "Date_Granted": "2019-12-12",
+   "Date_Argued": "2020-05-04",
+   "Date_Decided": "2020-06-28"
+ },
+ {
+   "Year": 2019,
+   "Title": "Our Lady of Guadalupe School v. Morrissey-Berru",
+   "Date_Granted": "2019-12-17",
+   "Date_Argued": "2020-05-10",
+   "Date_Decided": "2020-07-07"
+ },
+ {
+   "Year": 2019,
+   "Title": "Barr v. American Association of Political Consultants Inc.",
+   "Date_Granted": "2020-01-09",
+   "Date_Argued": "2020-05-05",
+   "Date_Decided": "2020-07-05"
+ },
+ {
+   "Year": 2019,
+   "Title": "Little Sisters of the Poor Saints Peter and Paul Home v. Pennsylvania",
+   "Date_Granted": "2020-01-16",
+   "Date_Argued": "2020-05-05",
+   "Date_Decided": "2020-07-07"
+ },
+ {
+   "Year": 2019,
+   "Title": "Chiafalo v. Washington",
+   "Date_Granted": "2020-01-16",
+   "Date_Argued": "2020-05-12",
+   "Date_Decided": "2020-07-05"
+ },
+ {
+   "Year": 2019,
+   "Title": "Colorado Department of State v. Baca",
+   "Date_Granted": "2020-01-16",
+   "Date_Argued": "2020-05-12",
+   "Date_Decided": "2020-07-05"
+ },
+ {
+   "Year": 2020,
+   "Title": "Google LLC v. Oracle America Inc.",
+   "Date_Granted": "2019-11-14",
+   "Date_Argued": "2020-10-06",
+   "Date_Decided": "2021-04-04"
+ },
+ {
+   "Year": 2020,
+   "Title": "United States v. Briggs",
+   "Date_Granted": "2019-11-14",
+   "Date_Argued": "2020-10-12",
+   "Date_Decided": "2020-12-09"
+ },
+ {
+   "Year": 2020,
+   "Title": "Tanzin v. Tanvir",
+   "Date_Granted": "2019-11-21",
+   "Date_Argued": "2020-10-05",
+   "Date_Decided": "2020-12-09"
+ },
+ {
+   "Year": 2020,
+   "Title": "Carney v. Adams",
+   "Date_Granted": "2019-12-05",
+   "Date_Argued": "2020-10-04",
+   "Date_Decided": "2020-12-09"
+ },
+ {
+   "Year": 2020,
+   "Title": "Torres v. Madrid",
+   "Date_Granted": "2019-12-17",
+   "Date_Argued": "2020-10-13",
+   "Date_Decided": "2021-03-24"
+ },
+ {
+   "Year": 2020,
+   "Title": "City of Chicago v. Fulton",
+   "Date_Granted": "2019-12-17",
+   "Date_Argued": "2020-10-12",
+   "Date_Decided": "2021-01-13"
+ },
+ {
+   "Year": 2020,
+   "Title": "Pereida v. Wilkinson",
+   "Date_Granted": "2019-12-17",
+   "Date_Argued": "2020-10-13",
+   "Date_Decided": "2021-03-03"
+ },
+ {
+   "Year": 2020,
+   "Title": "Rutledge v. Pharmaceutical Care Management Association",
+   "Date_Granted": "2020-01-09",
+   "Date_Argued": "2020-10-05",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Salinas v. United States Railroad Retirement Board",
+   "Date_Granted": "2020-01-09",
+   "Date_Argued": "2020-11-01",
+   "Date_Decided": "2021-02-02"
+ },
+ {
+   "Year": 2020,
+   "Title": "Ford Motor Company v. Montana Eighth Judicial District Court",
+   "Date_Granted": "2020-01-16",
+   "Date_Argued": "2020-10-06",
+   "Date_Decided": "2021-03-24"
+ },
+ {
+   "Year": 2020,
+   "Title": "Fulton v. City of Philadelphia",
+   "Date_Granted": "2020-02-23",
+   "Date_Argued": "2020-11-03",
+   "Date_Decided": "2021-06-16"
+ },
+ {
+   "Year": 2020,
+   "Title": "U.S. Fish and Wildlife Service v. Sierra Club",
+   "Date_Granted": "2020-03-01",
+   "Date_Argued": "2020-11-01",
+   "Date_Decided": "2021-03-03"
+ },
+ {
+   "Year": 2020,
+   "Title": "Borden v. United States",
+   "Date_Granted": "2020-03-01",
+   "Date_Argued": "2020-11-02",
+   "Date_Decided": "2021-06-09"
+ },
+ {
+   "Year": 2020,
+   "Title": "California v. Texas",
+   "Date_Granted": "2020-03-01",
+   "Date_Argued": "2020-11-09",
+   "Date_Decided": "2021-06-16"
+ },
+ {
+   "Year": 2020,
+   "Title": "Jones v. Mississippi",
+   "Date_Granted": "2020-03-08",
+   "Date_Argued": "2020-11-02",
+   "Date_Decided": "2021-04-21"
+ },
+ {
+   "Year": 2020,
+   "Title": "Brownback v. King",
+   "Date_Granted": "2020-03-29",
+   "Date_Argued": "2020-11-08",
+   "Date_Decided": "2021-02-24"
+ },
+ {
+   "Year": 2020,
+   "Title": "Van Buren v. United States",
+   "Date_Granted": "2020-04-19",
+   "Date_Argued": "2020-11-29",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Niz-Chavez v. Garland",
+   "Date_Granted": "2020-06-07",
+   "Date_Argued": "2020-11-08",
+   "Date_Decided": "2021-04-28"
+ },
+ {
+   "Year": 2020,
+   "Title": "CIC Services, LLC v. Internal Revenue Service",
+   "Date_Granted": "2020-05-03",
+   "Date_Argued": "2020-11-30",
+   "Date_Decided": "2021-05-16"
+ },
+ {
+   "Year": 2020,
+   "Title": "Edwards v. Vannoy",
+   "Date_Granted": "2020-05-03",
+   "Date_Argued": "2020-12-01",
+   "Date_Decided": "2021-05-16"
+ },
+ {
+   "Year": 2020,
+   "Title": "Johnson v. Guzman Chavez",
+   "Date_Granted": "2020-06-14",
+   "Date_Argued": "2021-01-10",
+   "Date_Decided": "2021-06-28"
+ },
+ {
+   "Year": 2020,
+   "Title": "Henry Schein Inc. v. Archer and White Sales Inc.",
+   "Date_Granted": "2020-06-14",
+   "Date_Argued": "2020-12-07",
+   "Date_Decided": "2021-01-24"
+ },
+ {
+   "Year": 2020,
+   "Title": "Collins v. Yellen",
+   "Date_Granted": "2020-07-08",
+   "Date_Argued": "2020-12-08",
+   "Date_Decided": "2021-06-22"
+ },
+ {
+   "Year": 2020,
+   "Title": "AMG Capital Management, LLC v. Federal Trade Commission",
+   "Date_Granted": "2020-07-08",
+   "Date_Argued": "2021-01-12",
+   "Date_Decided": "2021-04-21"
+ },
+ {
+   "Year": 2020,
+   "Title": "Facebook, Inc. v. Duguid",
+   "Date_Granted": "2020-07-08",
+   "Date_Argued": "2020-12-07",
+   "Date_Decided": "2021-03-31"
+ },
+ {
+   "Year": 2020,
+   "Title": "Uzuegbunam v. Preczewski",
+   "Date_Granted": "2020-07-08",
+   "Date_Argued": "2021-01-11",
+   "Date_Decided": "2021-03-07"
+ },
+ {
+   "Year": 2020,
+   "Title": "Department of Justice v. House Committee on the Judiciary",
+   "Date_Granted": "2020-07-01",
+   "Date_Argued": "",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Federal Republic of Germany v. Philipp",
+   "Date_Granted": "2020-07-01",
+   "Date_Argued": "2020-12-06",
+   "Date_Decided": "2021-02-02"
+ },
+ {
+   "Year": 2020,
+   "Title": "Nestlé USA, Inc. v. Doe I",
+   "Date_Granted": "2020-07-01",
+   "Date_Argued": "2020-11-30",
+   "Date_Decided": "2021-06-16"
+ },
+ {
+   "Year": 2020,
+   "Title": "Republic of Hungary v. Simon",
+   "Date_Granted": "2020-07-01",
+   "Date_Argued": "2020-12-06",
+   "Date_Decided": "2021-02-02"
+ },
+ {
+   "Year": 2020,
+   "Title": "Texas v. New Mexico",
+   "Date_Granted": "2020-10-04",
+   "Date_Argued": "2020-12-13",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Garland v. Dai",
+   "Date_Granted": "2020-10-01",
+   "Date_Argued": "2021-02-22",
+   "Date_Decided": "2021-05-31"
+ },
+ {
+   "Year": 2020,
+   "Title": "BP P.L.C. v. Mayor and City Council of Baltimore",
+   "Date_Granted": "2020-10-01",
+   "Date_Argued": "2021-01-18",
+   "Date_Decided": "2021-05-16"
+ },
+ {
+   "Year": 2020,
+   "Title": "FCC v. Prometheus Radio Project",
+   "Date_Granted": "2020-10-01",
+   "Date_Argued": "2021-01-18",
+   "Date_Decided": "2021-03-31"
+ },
+ {
+   "Year": 2020,
+   "Title": "Brnovich v. Democratic National Committee",
+   "Date_Granted": "2020-10-01",
+   "Date_Argued": "2021-03-01",
+   "Date_Decided": "2021-07-01"
+ },
+ {
+   "Year": 2020,
+   "Title": "United States v. Arthrex, Inc.",
+   "Date_Granted": "2020-10-12",
+   "Date_Argued": "2021-02-28",
+   "Date_Decided": "2021-06-20"
+ },
+ {
+   "Year": 2020,
+   "Title": "Mayorkas v. Innovation Law Lab",
+   "Date_Granted": "2020-10-18",
+   "Date_Argued": "",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Trump v. Sierra Club",
+   "Date_Granted": "2020-10-18",
+   "Date_Argued": "",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Lange v. California",
+   "Date_Granted": "2020-10-18",
+   "Date_Argued": "2021-02-23",
+   "Date_Decided": "2021-06-22"
+ },
+ {
+   "Year": 2020,
+   "Title": "Carr v. Saul",
+   "Date_Granted": "2020-11-08",
+   "Date_Argued": "2021-03-02",
+   "Date_Decided": "2021-04-21"
+ },
+ {
+   "Year": 2020,
+   "Title": "Cedar Point Nursery v. Hassid",
+   "Date_Granted": "2020-11-12",
+   "Date_Argued": "2021-03-21",
+   "Date_Decided": "2021-06-22"
+ },
+ {
+   "Year": 2020,
+   "Title": "Roman Catholic Diocese of Brooklyn v. Cuomo",
+   "Date_Granted": "2020-11-24",
+   "Date_Argued": "",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Trump v. New York",
+   "Date_Granted": "2020-09-21",
+   "Date_Argued": "2020-11-29",
+   "Date_Decided": "2020-12-17"
+ },
+ {
+   "Year": 2020,
+   "Title": "Caniglia v. Strom",
+   "Date_Granted": "2020-11-19",
+   "Date_Argued": "2021-03-23",
+   "Date_Decided": "2021-05-16"
+ },
+ {
+   "Year": 2020,
+   "Title": "Goldman Sachs Group Inc. v. Arkansas Teacher Retirement System",
+   "Date_Granted": "2020-12-10",
+   "Date_Argued": "2021-03-28",
+   "Date_Decided": "2021-06-20"
+ },
+ {
+   "Year": 2020,
+   "Title": "TransUnion LLC v. Ramirez",
+   "Date_Granted": "2020-12-15",
+   "Date_Argued": "2021-03-29",
+   "Date_Decided": "2021-06-24"
+ },
+ {
+   "Year": 2020,
+   "Title": "National Collegiate Athletic Association v. Alston",
+   "Date_Granted": "2020-12-15",
+   "Date_Argued": "2021-03-30",
+   "Date_Decided": "2021-06-20"
+ },
+ {
+   "Year": 2020,
+   "Title": "Shinn v. Kayer",
+   "Date_Granted": "2020-12-13",
+   "Date_Argued": "2020-12-13",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "Americans for Prosperity v. Bonta",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-25",
+   "Date_Decided": "2021-06-30"
+ },
+ {
+   "Year": 2020,
+   "Title": "Greer v. United States",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-19",
+   "Date_Decided": "2021-06-13"
+ },
+ {
+   "Year": 2020,
+   "Title": "Mahanoy Area School District v. B.L.",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-27",
+   "Date_Decided": "2021-06-22"
+ },
+ {
+   "Year": 2020,
+   "Title": "Sanchez v. Mayorkas",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-18",
+   "Date_Decided": "2021-06-06"
+ },
+ {
+   "Year": 2020,
+   "Title": "San Antonio v. Hotels.com, L.P.",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-20",
+   "Date_Decided": "2021-05-26"
+ },
+ {
+   "Year": 2020,
+   "Title": "Guam v. United States",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-25",
+   "Date_Decided": "2021-05-23"
+ },
+ {
+   "Year": 2020,
+   "Title": "Minerva Surgical, Inc. v. Hologic, Inc.",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-20",
+   "Date_Decided": "2021-06-28"
+ },
+ {
+   "Year": 2020,
+   "Title": "United States v. Gary",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-19",
+   "Date_Decided": "2021-06-13"
+ },
+ {
+   "Year": 2020,
+   "Title": "HollyFrontier Cheyenne Refining LLC v. Renewable Fuels Association",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-26",
+   "Date_Decided": "2021-06-24"
+ },
+ {
+   "Year": 2020,
+   "Title": "Yellen v. Confederated Tribes of the Chehalis Reservation",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-18",
+   "Date_Decided": "2021-06-24"
+ },
+ {
+   "Year": 2020,
+   "Title": "Terry v. United States",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-05-03",
+   "Date_Decided": "2021-06-13"
+ },
+ {
+   "Year": 2020,
+   "Title": "United States v. Palomar-Santiago",
+   "Date_Granted": "2021-01-07",
+   "Date_Argued": "2021-04-26",
+   "Date_Decided": "2021-05-23"
+ },
+ {
+   "Year": 2020,
+   "Title": "Cochran v. Gresham",
+   "Date_Granted": "2020-12-03",
+   "Date_Argued": "",
+   "Date_Decided": ""
+ },
+ {
+   "Year": 2020,
+   "Title": "United States v. Cooley",
+   "Date_Granted": "2020-11-19",
+   "Date_Argued": "2021-03-22",
+   "Date_Decided": "2021-05-31"
+ },
+ {
+   "Year": 2020,
+   "Title": "Florida v. Georgia",
+   "Date_Granted": "2013-10-03",
+   "Date_Argued": "2021-02-21",
+   "Date_Decided": "2021-03-31"
+ },
+ {
+   "Year": 2020,
+   "Title": "PennEast Pipeline Co. v. New Jersey",
+   "Date_Granted": "2021-02-02",
+   "Date_Argued": "2021-04-27",
+   "Date_Decided": "2021-06-28"
  }
 ]
