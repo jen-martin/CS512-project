@@ -1,5 +1,7 @@
 import requests
 import json
+import pandas as pd
+from datetime import datetime
 
 def main():
     #range of years of SCOTUS data to get
@@ -7,7 +9,6 @@ def main():
     end_year = 2020
     #variable to store dates for SCOTUS trials
     scotus_dates = []
-    #scotus_dates = ["Year", "Title", "Granted", "Argued", "Decided"]
 
     #API endpoint url for SCOTUS cases
     api_base_url = 'https://api.oyez.org/cases?per_page=0&filter=term:'
@@ -41,7 +42,9 @@ def main():
                     # do something
                     line.append(" ")
                 else:
-                    line.append(str(item["dates"][0]))
+                    #convert epoch time to YYYY-MM-DD, solution provided by "FloLie" at https://stackoverflow.com/questions/65063058/convert-unix-timestamp-to-date-string-with-format-yyyy-mm-dd
+                    dt = datetime.fromtimestamp(item["dates"][0])
+                    line.append(dt.strftime("%Y-%m-%d"))
             scotus_dates.append(line)
 
     #Write cleaned data to CSV file
@@ -58,7 +61,7 @@ def write_csv(data_list, outfile):
     print("Saving file to CSV: " + outfile)
     with open (outfile, "w") as outfile:
         #write header row
-        outfile.write("Year, Title, Date Granted, Date Argued, Date Decided\n")
+        outfile.write("Year, Title, Date_Granted, Date_Argued, Date_Decided\n")
         #iterate through each row of the data, join with a comma, and write to file
         for row in data_list:
             line = ", ".join(row)
