@@ -47,6 +47,12 @@ def main():
     #Write cleaned data to CSV file
     write_csv(scotus_dates, "scotus_dates.csv")
 
+    #Convert CSV file to JSON file
+    csv_to_json("scotus_dates.csv", "scotus_dates_converted.json")
+
+    #Convert JSON file to CSV file
+    json_to_csv("scotus_dates_converted.json", "scotus_dates_converted.csv")
+
 def write_csv(data_list, outfile):
     """This function takes a list of lists and writes a CSV file."""
     print("Saving file to CSV: " + outfile)
@@ -58,7 +64,7 @@ def write_csv(data_list, outfile):
             line = ", ".join(row)
             outfile.write(line + "\n")
 
-def csv_to_json(infile):
+def csv_to_json(infile, outfile):
     """This function converts a CSV-formatted file into a JSON-formatted file."""
     print("Converting CSV file to JSON")
     # to do
@@ -74,7 +80,7 @@ def write_json(data_list, outfile):
     #     json.dump(scotus_data, outfile)
 
 
-def json_to_csv(infile);
+def json_to_csv(infile, outfile):
     """This function converts a JSON-formatted file into a CSV-formatted file."""
     print("Converting JSON file to CSV")
     #TO DO
