@@ -46,20 +46,22 @@ for i in range(start_year, end_year+1):
     #print(scotus_dates) #debug
 
 
-# ===== WRITE DATA TO CSV =======
-with open ("scotus_dates.csv", "w") as outfile:
-    #write header row
-    outfile.write("Year, Title, Date Granted, Date Argued, Date Decided\n")
-    #iterate through each row of the data, join with a comma, and write to file
-    for row in scotus_dates:
-        line = ", ".join(row)
-        outfile.write(line + "\n")
+function write_csv():
+    # ===== WRITE DATA TO CSV =======
+    with open ("scotus_dates.csv", "w") as outfile:
+        #write header row
+        outfile.write("Year, Title, Date Granted, Date Argued, Date Decided\n")
+        #iterate through each row of the data, join with a comma, and write to file
+        for row in scotus_dates:
+            line = ", ".join(row)
+            outfile.write(line + "\n")
 
-# ===== WRITE DATA TO JSON =======
-# # Save data to a JSON file
-# outfile = "scotus_data_" + str(i) + ".json" 
-# with open (outfile, "w") as outfile:
-#     json.dump(scotus_data, outfile)
+function write_json():
+    # ===== WRITE DATA TO JSON =======
+    # # Save data to a JSON file
+    # outfile = "scotus_data_" + str(i) + ".json" 
+    # with open (outfile, "w") as outfile:
+    #     json.dump(scotus_data, outfile)
 
 
 
