@@ -74,8 +74,8 @@ def write_csv(data_list, outfile):
         outfile.write("Year, Title, Date_Granted, Date_Argued, Date_Decided\n")
         #iterate through each row of the data, join with a comma, and write to file
         for row in data_list:
-            #add quote marks to title
-            row[1] = f'"{row[1]}"'
+            row[0] = str(row[0]) #convert year to string to use join
+            row[1] = f'"{row[1]}"' #add quote marks to title
             line = ", ".join(row)
             outfile.write(line + "\n")
 
@@ -96,12 +96,13 @@ def write_json(data_list, outfile):
 
 def json_to_csv(infile, outfile):
     """This function converts a JSON-formatted file into a CSV-formatted file."""
-    #Converting the json file to csv using pandas
-    df = pd.read_json(infile)
-    #convert values to strings
-    df = df.astype(str)
-    date_list = df.values.tolist()
-    write_csv(date_list, outfile)
+    with open(infile, "r") as file:
+        date_list = json.load(file)
+        print("Pringting result of json.load():")
+        #print results of json.load to screen as noted in assigment
+        print(date_list)
+        write_csv(date_list, outfile)
+    
     print("Converted JSON file (" + infile + ") to CSV (" + outfile + ")")
 
 if __name__ == '__main__':
