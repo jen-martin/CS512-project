@@ -5,8 +5,8 @@ from datetime import datetime
 
 def main():
     #range of years of SCOTUS data to get
-    start_year = 2019
-    end_year = 2020
+    start_year = 2017
+    end_year = 2024
     #variable to store dates for SCOTUS trials
     scotus_dates = []
 
@@ -32,20 +32,29 @@ def main():
             #temporary list for dates
             line = [str(i)]
             #get name of case
-            #line.append(f'"{row.get("name",[])}"')
             line.append(row.get("name",[]))
+            #txt = row.get("name", []) #strip commas out of case name
+            #txt = txt.replace(",","")
+            #line.append(txt)
             #first, get the timeline data as a list
             timeline = row.get("timeline", [])
             #print(timeline) #debug
             #now get each "event" (Granted, Argued, Decided)
+            #because timeline can include one or more events, create a dict
+            #note: events can also inlcude "Reargued", "Dismissed", "Dismissed" + other words, "Juris Postponed", "Referred to the Court", and other terms
+            events = {"Granted": "0", "Argued": "0", "Decided": "0"}
             for item in timeline:
-                if item is None:
-                    # do something
-                    line.append('" "')
-                else:
-                    #convert epoch time to YYYY-MM-DD, solution provided by "FloLie" at https://stackoverflow.com/questions/65063058/convert-unix-timestamp-to-date-string-with-format-yyyy-mm-dd
-                    dt = datetime.fromtimestamp(item["dates"][0])
-                    line.append(dt.strftime("%Y-%m-%d"))
+                if item is not None: #check to make sure there isn't a blank item in the list
+                    if "event" in item.keys(): #verify the key exists for an event
+                        action = item["event"] #get the event value
+                        if action in events: #only get the date if the event is granted, argued, or decided
+                            #convert epoch time to YYYY-MM-DD, solution provided by "FloLie" at https://stackoverflow.com/questions/65063058/convert-unix-timestamp-to-date-string-with-format-yyyy-mm-dd
+                            dt = datetime.fromtimestamp(item["dates"][0])
+                            events[action] = dt.strftime("%Y-%m-%d")
+            #add dates to line
+            line.append(events["Granted"])
+            line.append(events["Argued"])
+            line.append(events["Decided"])
             scotus_dates.append(line)
 
     #Write cleaned data to CSV file
@@ -55,8 +64,7 @@ def main():
     csv_to_json("scotus_dates.csv", "scotus_dates_converted.json")
 
     #Convert JSON file to CSV file
-    json_to_csv("test.json", "scotus_dates_converted.csv")
-    #json_to_csv("scotus_dates_converted.json", "scotus_dates_converted.csv")
+    json_to_csv("scotus_dates_converted.json", "scotus_dates_converted.csv")
 
 def write_csv(data_list, outfile):
     """This function takes a list of lists and writes a CSV file."""
@@ -73,18 +81,17 @@ def write_csv(data_list, outfile):
 
 def csv_to_json(infile, outfile):
     """This function converts a CSV-formatted file into a JSON-formatted file."""
-    #TO DO
+    df = pd.read_csv(infile, skipinitialspace=True) 
+    data_list = df.values.tolist()
+    write_json(data_list, outfile)
     print("Converted CSV file (" + infile + ") to JSON (" + outfile + ")")
 
 
 def write_json(data_list, outfile):
-    """This function takes a list of lists(?) and writes a JSON-formatted file."""
-    print("Saving file to JSON")
-    # TO DO
-    # # Save data to a JSON file
-    # outfile = "scotus_data_" + str(i) + ".json" 
-    # with open (outfile, "w") as outfile:
-    #     json.dump(scotus_data, outfile)
+    """This function takes a list of lists and writes a JSON-formatted file."""
+    print("Writing JSON file")
+    with open (outfile, "w") as outfile:
+        json.dump(data_list, outfile)
 
 
 def json_to_csv(infile, outfile):
