@@ -1,9 +1,50 @@
+"""Extract SCOTUS Dates
+
+This script uses the Oyez.com API (https://api.oyez.org)
+to get U.S. Supreme Court case summaries and extract the 
+term year, case name, and the date when the case was Granted, 
+Argued, or Decided for the years 2017 to 2024.
+
+Data are saved in two formats: CSV and JSON. Three files are created:
+    * The main CSV output file: "scotus_dates.csv"
+    * A JSON version of the main CSV file: "scotus_dates_converted.json"
+    * To show that the JSON can be converted back to CSV
+        without loss of data, a third file, "scotus_dates_converted.csv",
+        is generated.
+
+This script requires the Pandas python library.
+
+Functions:
+    * main - the main function of this script
+    * write_csv(data_list, outfile) - takes a 5-column list of lists ('data_list') 
+        and uses the srting argument 'outfile' to write the list to a CSV file.
+    * csv_to_json(infile, outfile) - reads in a CSV file, converts to JSON and saves 
+        the JSON to a file. 'infile' is the name of the CSV input file. 'outfile' is 
+        the name of the JSON formatted outfile. Calls write_json(data_list, outfile)
+        to handle writing the JSON to a file by passing a list and the name of the
+        output file.
+    * write_json(data_list, outfile) - takes a 5-column list of lists ('data_list') 
+        and uses the srting argument 'outfile' to write the list to a JSON file.
+    * json_to_csv(infile, outfile) - reads in a JSON file, converts the JSON to a 
+        list of lists and saves as a CSV. 'infile' is the name of the JSON input file. 
+        'outfile' is the name of the CSV outfile. Calls write_csv(data_list, outfile)
+        to handle writing the list to a CSV file by passing a list and the name of the
+        output file.
+
+
+Change log:
+-Add comments and clean up; modified 1/27/2025 at 6:35 pm (JM)
+-First documented version: 1/27/2025 at 12:37 AM (JM)
+"""
+
 import requests
 import json
 import pandas as pd
 from datetime import datetime
 
 def main():
+    """ Wrapper function to get data and generate output files. """
+
     #range of years of SCOTUS data to get
     start_year = 2017
     end_year = 2024
@@ -15,32 +56,30 @@ def main():
 
     #SCOTUS Cases are organized by Year, so iterate over the range of years
     for i in range(start_year, end_year+1):
-        #Create the API URL from the base URL (api_base_url) plus the year
+        #Create the API URL from the base URL (api_base_url) plus the year and read as JSON
         api_url = api_base_url + str(i)
-        # send GET request to the Oyez API
         Oyez_API = requests.get(api_url)
-        #
         scotus_data = Oyez_API.json()
 
         # status code check
         print(str(i) + ": " + f"status code: {Oyez_API.status_code}")
 
 
-        # ==== DATA FOR ANALYSIS =====
-        #iterate over each case in scotus_data list
+        #Each JSON file contains all cases for a particular term so
+        # get year, case title and case dates by iterating over the 'scotus_data' list
         for row in scotus_data:
             #temporary list for dates
             line = [str(i)]
             #get name of case
             line.append(row.get("name",[]))
-            #txt = row.get("name", []) #strip commas out of case name
+            # To strip out commas in case names, comment the line above and uncomment the following 3 lines
+            #txt = row.get("name", [])
             #txt = txt.replace(",","")
             #line.append(txt)
             #first, get the timeline data as a list
             timeline = row.get("timeline", [])
-            #print(timeline) #debug
             #now get each "event" (Granted, Argued, Decided)
-            #because timeline can include one or more events, create a dict
+            #because 'timeline' can include one or more events, create a dict
             #note: events can also inlcude "Reargued", "Dismissed", "Dismissed" + other words, "Juris Postponed", "Referred to the Court", and other terms
             events = {"Granted": "0", "Argued": "0", "Decided": "0"}
             for item in timeline:
@@ -51,7 +90,7 @@ def main():
                             #convert epoch time to YYYY-MM-DD, solution provided by "FloLie" at https://stackoverflow.com/questions/65063058/convert-unix-timestamp-to-date-string-with-format-yyyy-mm-dd
                             dt = datetime.fromtimestamp(item["dates"][0])
                             events[action] = dt.strftime("%Y-%m-%d")
-            #add dates to line
+            #add dates to line, and then add the line to the primary data variable 'scotus_dates'
             line.append(events["Granted"])
             line.append(events["Argued"])
             line.append(events["Decided"])
@@ -63,11 +102,11 @@ def main():
     #Convert CSV file to JSON file
     csv_to_json("scotus_dates.csv", "scotus_dates_converted.json")
 
-    #Convert JSON file to CSV file
+    #Convert JSON file to CSV file (as proof that no data is lost)
     json_to_csv("scotus_dates_converted.json", "scotus_dates_converted.csv")
 
 def write_csv(data_list, outfile):
-    """This function takes a list of lists and writes a CSV file."""
+    """This function takes a list of lists with 5 columns and writes a CSV file."""
     print("Saving file to CSV: " + outfile)
     with open (outfile, "w") as outfile:
         #write header row
@@ -107,6 +146,4 @@ def json_to_csv(infile, outfile):
 
 if __name__ == '__main__':
     main()
-
-
 
