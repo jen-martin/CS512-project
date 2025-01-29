@@ -20,11 +20,7 @@ Functions:
         and uses the string argument 'outfile' to write the list to a CSV file.
     * csv_to_json(infile, outfile) - reads in a CSV file, converts to JSON and saves 
         the JSON to a file. 'infile' is the name of the CSV input file. 'outfile' is 
-        the name of the JSON formatted outfile. Calls write_json(data_list, outfile)
-        to handle writing the JSON to a file by passing a list and the name of the
-        output file.
-    * write_json(data_list, outfile) - takes a 5-column list of lists ('data_list') 
-        and uses the string argument 'outfile' to write the list to a JSON file.
+        the name of the JSON formatted outfile.
     * json_to_csv(infile, outfile) - reads in a JSON file, converts the JSON to a 
         list of lists and saves as a CSV. 'infile' is the name of the JSON input file. 
         'outfile' is the name of the CSV outfile. Calls write_csv(data_list, outfile)
@@ -33,6 +29,8 @@ Functions:
 
 
 Change log:
+-modified to output CSV items in JSON "key":"value" pairs, 7:37 pm (JM)
+-Fixes spelling and clean up; modified 1/18/2025 at 6:34 pm (JM)
 -Add comments and clean up; modified 1/27/2025 at 6:35 pm (JM)
 -First documented version: 1/27/2025 at 12:37 AM (JM)
 """
@@ -121,26 +119,23 @@ def write_csv(data_list, outfile):
 def csv_to_json(infile, outfile):
     """This function converts a CSV-formatted file into a JSON-formatted file."""
     df = pd.read_csv(infile, skipinitialspace=True) 
-    data_list = df.values.tolist()
-    write_json(data_list, outfile)
+    df.to_json(outfile, orient='records')
     print("Converted CSV file (" + infile + ") to JSON (" + outfile + ")")
-
-
-def write_json(data_list, outfile):
-    """This function takes a list of lists and writes a JSON-formatted file."""
-    print("Writing JSON file")
-    with open (outfile, "w") as outfile:
-        json.dump(data_list, outfile)
-
 
 def json_to_csv(infile, outfile):
     """This function converts a JSON-formatted file into a CSV-formatted file."""
     with open(infile, "r") as file:
-        date_list = json.load(file)
-        print("Printing result of json.load():")
+        print("Reading JSON file via json.load()")
+        json_list = json.load(file)
         #print results of json.load to screen as noted in assignment
+        print("Printing first 10 items from json.load():")
+        print(json_list[:10])
+        # create a list to hold imported data
+        date_list = []
+        for row in json_list:
+            items = [row["Year"], row["Title"], row["Date_Granted"], row["Date_Argued"], row["Date_Decided"]]
+            date_list.append(items)
         write_csv(date_list, outfile)
-    
     print("Converted JSON file (" + infile + ") to CSV (" + outfile + ")")
 
 if __name__ == '__main__':
