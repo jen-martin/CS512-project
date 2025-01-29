@@ -29,7 +29,8 @@ Functions:
 
 
 Change log:
--modified to output CSV items in JSON "key":"value" pairs, 7:37 pm (JM)
+-adds top-level object to JSON for better compatiblilty, 1/28/2025 at 8:40 pm (JM)
+-modified to output JSON "key":"value" pairs, 1/28/2025 at 7:37 pm (JM)
 -Fixes spelling and clean up; modified 1/18/2025 at 6:34 pm (JM)
 -Add comments and clean up; modified 1/27/2025 at 6:35 pm (JM)
 -First documented version: 1/27/2025 at 12:37 AM (JM)
@@ -119,20 +120,24 @@ def write_csv(data_list, outfile):
 def csv_to_json(infile, outfile):
     """This function converts a CSV-formatted file into a JSON-formatted file."""
     df = pd.read_csv(infile, skipinitialspace=True) 
-    df.to_json(outfile, orient='records')
+    #df.to_json(outfile, orient='records')
+    # convert to dict for writing to json, ensure proper json syntax
+    data = {"data": df.to_dict(orient='records')}
+    with open(outfile, 'w') as file: 
+        file.write(json.dumps(data))
     print("Converted CSV file (" + infile + ") to JSON (" + outfile + ")")
 
 def json_to_csv(infile, outfile):
     """This function converts a JSON-formatted file into a CSV-formatted file."""
     with open(infile, "r") as file:
         print("Reading JSON file via json.load()")
-        json_list = json.load(file)
+        json_dict = json.load(file)
         #print results of json.load to screen as noted in assignment
         print("Printing first 10 items from json.load():")
-        print(json_list[:10])
+        print(json_dict["data"][:10])
         # create a list to hold imported data
         date_list = []
-        for row in json_list:
+        for row in json_dict["data"]:
             items = [row["Year"], row["Title"], row["Date_Granted"], row["Date_Argued"], row["Date_Decided"]]
             date_list.append(items)
         write_csv(date_list, outfile)
