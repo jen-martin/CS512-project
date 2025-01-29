@@ -17,14 +17,14 @@ This script requires the Pandas python library.
 Functions:
     * main - the main function of this script
     * write_csv(data_list, outfile) - takes a 5-column list of lists ('data_list') 
-        and uses the srting argument 'outfile' to write the list to a CSV file.
+        and uses the string argument 'outfile' to write the list to a CSV file.
     * csv_to_json(infile, outfile) - reads in a CSV file, converts to JSON and saves 
         the JSON to a file. 'infile' is the name of the CSV input file. 'outfile' is 
         the name of the JSON formatted outfile. Calls write_json(data_list, outfile)
         to handle writing the JSON to a file by passing a list and the name of the
         output file.
     * write_json(data_list, outfile) - takes a 5-column list of lists ('data_list') 
-        and uses the srting argument 'outfile' to write the list to a JSON file.
+        and uses the string argument 'outfile' to write the list to a JSON file.
     * json_to_csv(infile, outfile) - reads in a JSON file, converts the JSON to a 
         list of lists and saves as a CSV. 'infile' is the name of the JSON input file. 
         'outfile' is the name of the CSV outfile. Calls write_csv(data_list, outfile)
@@ -80,7 +80,7 @@ def main():
             timeline = row.get("timeline", [])
             #now get each "event" (Granted, Argued, Decided)
             #because 'timeline' can include one or more events, create a dict
-            #note: events can also inlcude "Reargued", "Dismissed", "Dismissed" + other words, "Juris Postponed", "Referred to the Court", and other terms
+            #note: events can also include "Reargued", "Dismissed", "Dismissed" + other words, "Juris Postponed", "Referred to the Court", and other terms
             events = {"Granted": "0", "Argued": "0", "Decided": "0"}
             for item in timeline:
                 if item is not None: #check to make sure there isn't a blank item in the list
@@ -137,9 +137,8 @@ def json_to_csv(infile, outfile):
     """This function converts a JSON-formatted file into a CSV-formatted file."""
     with open(infile, "r") as file:
         date_list = json.load(file)
-        print("Pringting result of json.load():")
-        #print results of json.load to screen as noted in assigment
-        print(date_list)
+        print("Printing result of json.load():")
+        #print results of json.load to screen as noted in assignment
         write_csv(date_list, outfile)
     
     print("Converted JSON file (" + infile + ") to CSV (" + outfile + ")")
